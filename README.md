@@ -17,7 +17,7 @@ curl -w "\n" -H "Content-Type: application/json" --unix-socket /run/user/$UID/po
 
 "dev.containers.dockerPath": "podman-remote"
 OR
-/var/home/zihad/.var/app/com.visualstudio.code/config/Code/User/settings.json
+~/.var/app/com.visualstudio.code/config/Code/User/settings.json
 {
     "dev.containers.dockerPath": "/app/tools/podman/bin/podman-remote"
 }

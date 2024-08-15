@@ -15,7 +15,7 @@ flatpak override --user --filesystem=/tmp:rw com.visualstudio.code
 
 curl -w "\n" -H "Content-Type: application/json" --unix-socket /run/user/$UID/podman/podman.sock http://localhost/_ping
 
-"dev.containers.dockerPath": "/app/tools/podman/bin/podman-remote/podman-remote"
+"dev.containers.dockerPath": "/app/tools/podman/bin/podman/podman-remote"
 OR
 ~/.var/app/com.visualstudio.code/config/Code/User/settings.json
 {

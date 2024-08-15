@@ -2,8 +2,7 @@
 
 
 ```
-flatpak install --user com.visualstudio.code
-flatpak install --user com.visualstudio.code.tool.podman
+flatpak install -y --user com.visualstudio.code com.visualstudio.code.tool.podman
 
 systemctl --user start podman.socket
 systemctl --user enable --now podman.socket

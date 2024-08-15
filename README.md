@@ -1,4 +1,4 @@
-#### devcontainer sample workspace for podman+vscode+flatpak+devcontainer
+# Devcontainer setup with flatpak vscode with podman
 
 NOTE: you must install `podman` in host machine.
 

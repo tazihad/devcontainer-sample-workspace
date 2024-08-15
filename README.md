@@ -39,8 +39,9 @@ flatpak run --user --command=sh com.visualstudio.code -c \
 ```
 
 replace docker with podman
+change from vscode user settings
 ```
-"dev.containers.dockerPath": "/app/tools/podman/bin/podman/podman-remote" # change from vscode setting
+"dev.containers.dockerPath": "/app/tools/podman/bin/podman/podman-remote"
 OR
 mkdir -p ~/.var/app/com.visualstudio.code/config/Code/User
 nano ~/.var/app/com.visualstudio.code/config/Code/User/settings.json

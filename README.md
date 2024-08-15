@@ -4,7 +4,7 @@ NOTE: you must install `podman` in host machine.
 
 Install flatpak vscode and podman
 ```
-flatpak install -y --user \
+flatpak --user install -y \
   com.visualstudio.code \
   com.visualstudio.code.tool.podman
 ```
@@ -17,7 +17,7 @@ systemctl --user status podman.socket
 
 override vscode flatpak settings
 ```
-flatpak override --user \
+flatpak --user override \
   --filesystem=xdg-run/podman:ro \
   --filesystem=/run/user/$UID/podman/podman.sock:ro \
   --filesystem=/tmp:rw \
@@ -34,7 +34,7 @@ curl -w "\n" \
 
 install [devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 ```
-flatpak run --user --command=sh com.visualstudio.code -c \
+flatpak --user run --command=sh com.visualstudio.code -c \
   "/app/extra/vscode/bin/code --install-extension ms-vscode-remote.remote-containers"
 ```
 
@@ -52,7 +52,7 @@ nano ~/.var/app/com.visualstudio.code/config/Code/User/settings.json
 
 testing if vscode flatpak is connected and working with podman
 ```
-flatpak run --user --command=sh com.visualstudio.code
+flatpak --user run --command=sh com.visualstudio.code
 /app/tools/podman/bin/podman-remote version
 /app/tools/podman/bin/podman-remote run --rm hello-world
 ```
